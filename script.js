@@ -8,5 +8,14 @@ function Book(bookTitle, bookAuthor, numberOfPages, readStatus) {
 }
 
 function addBookToLibrary() {
-  
+  let newBook = "user's inputed information"
+  myLibrary.push(newBook);
+}
+
+function displayLibrary() {
+  for (const book of myLibrary) {
+    const library = document.querySelector('.library');
+    const div = document.createElement('div');
+    library.append(div);
+  }
 }
